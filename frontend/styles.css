@@ -1,0 +1,209 @@
+ 
+body {
+    background: linear-gradient(145deg, #ad0689, #e67411, #2c8f64); /* dark green gradient */
+    font-family: 'Arial', sans-serif;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+ 
+.login-container {
+    width: 300px;
+    padding: 22px;
+    background: rgba(255, 255, 255, 0.15); 
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(8px); 
+    -webkit-backdrop-filter: blur(8px);
+}
+ 
+.header {
+    background: linear-gradient(90deg, #1db954, #1ed760);  
+    border-radius: 10px;
+    margin-bottom: 26px;
+    box-shadow: 0 3px 8px rgba(29, 185, 84, 0.5);
+}
+
+.header h1 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.3);
+}
+
+ 
+.dashboard-container {
+    padding: 38px;
+    background: rgba(255, 255, 255, 0.15);  
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+ 
+.table {
+    background: rgba(255, 255, 255, 0.15);  
+    color: #222;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+.table th, .table td {
+    text-align: center;
+    padding: 14px 18px;
+    font-size: 1rem;
+}
+
+.table th {
+    background: linear-gradient(90deg, #1db954, #1ed760);
+    color: white;
+    font-weight: 700;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.25);
+}
+
+.table td {
+    background: rgba(255, 255, 255, 0.1);  
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+ 
+.table .btn {
+    margin: 0 6px;
+    padding: 8px 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-success {
+    background: #1ed760; 
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(30, 215, 96, 0.45);
+}
+
+.btn-success:hover {
+    background: #17a246;
+}
+
+.btn-danger {
+    background: #e74c3c;  
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(231, 76, 60, 0.45);
+}
+
+.btn-danger:hover {
+    background: #c0392b;
+}
+
+.btn-primary {
+    background: #28a745;  
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.45);
+}
+
+.btn-primary:hover {
+    background: #1e7e34;
+}
+
+ 
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px 14px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1.5px solid #ddd;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: #1ed760;
+    box-shadow: 0 0 8px rgba(30, 215, 96, 0.6);
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #1db954, #1ed760);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(29, 185, 84, 0.5);
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(90deg, #1ed760, #1db954);
+}
+
+ 
+.drawer {
+    background: #121212;
+    color: #d4f3d4;
+    padding: 18px 22px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+    max-width: 300px;
+    font-weight: 600;
+    user-select: none;
+}
+
+.drawer a {
+    color: #1ed760;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 12px;
+    padding: 8px 0;
+    transition: color 0.25s ease;
+}
+
+.drawer a:hover {
+    color: #15a43b;
+    text-shadow: 0 0 5px #15a43b;
+}
+
+ 
+@media (max-width: 600px) {
+    .login-container {
+        width: 90%;
+        padding: 18px;
+        border-radius: 12px;
+    }
+    .dashboard-container {
+        padding: 24px;
+        width: 95%;
+        border-radius: 12px;
+    }
+    .drawer {
+        max-width: 100%;
+        padding: 14px;
+        border-radius: 12px;
+        font-size: 0.95rem;
+    }
+}
