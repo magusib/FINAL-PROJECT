@@ -104,7 +104,7 @@ function Dashboard() {
             </button>
           )}
           <span>Logged in as: {currentUser} ({role})</span>
-          <button className="btn btn-danger" onClick={handleLogout}>Logout</button>
+          <button className="btn btn-danger" onClick={handleLogout}><a href="LoginPage.js">Logout</a></button>
         </nav>
 
         <div className="container mt-4">
