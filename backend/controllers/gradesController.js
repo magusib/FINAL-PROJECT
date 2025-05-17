@@ -1,7 +1,7 @@
-// controllers/gradesController.js
+ 
 const db = require('../db');
 
-// LOGIN
+ 
 exports.login = (req, res) => {
   const { email, password } = req.body;
   db.query(
@@ -19,7 +19,7 @@ exports.login = (req, res) => {
   );
 };
 
-// GET GRADES
+ 
 exports.getGrades = (req, res) => {
   const { student_name, section } = req.query;
   let query = 'SELECT * FROM grades';
@@ -39,7 +39,7 @@ exports.getGrades = (req, res) => {
   });
 };
 
-// ADD GRADE
+ 
 exports.addGrade = (req, res) => {
   const { student_name, section, subject, grade, remarks } = req.body;
   db.query(
@@ -52,7 +52,7 @@ exports.addGrade = (req, res) => {
   );
 };
 
-// UPDATE GRADE
+ 
 exports.updateGrade = (req, res) => {
   const { id } = req.params;
   const { grade, remarks } = req.body;
@@ -65,8 +65,7 @@ exports.updateGrade = (req, res) => {
     }
   );
 };
-
-// DELETE GRADE
+ 
 exports.deleteGrade = (req, res) => {
   const { id } = req.params;
   db.query('DELETE FROM grades WHERE id = ?', [id], (err, result) => {
