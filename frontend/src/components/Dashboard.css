@@ -1,0 +1,146 @@
+/* Overall Dashboard Container */
+.dashboard-wrapper {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #444;
+  }
+  
+  .sidebar ul li:hover {
+    background-color: #007bff;
+  }
+  
+  .sidebar-toggle-btn {
+    display: none;
+  }
+  
+  .main-content {
+    margin-left: 250px;
+    padding: 20px;
+    flex-grow: 1;
+    transition: margin-left 0.3s ease;
+  }
+  
+  .navbar {
+    background-color: #343a40;
+    padding: 10px 20px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .navbar button {
+    color: white;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+  }
+  
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .table td input {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  ul li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  ul li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Sidebar Visibility */
+  .sidebar-toggle-btn {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    background-color: #343a40;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 4px;
+  }
+  
+  .sidebar-hide {
+    transform: translateX(-100%);
+  }
+  
+  .main-content {
+    margin-left: 250px;
+  }
+  
+  .sidebar-toggle-btn.hide-sidebar {
+    transform: translateX(100%);
+  }
+  
+  /* Styles for Student View */
+  .grades-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .grades-list table {
+    margin-top: 20px;
+  }
+  
+  .failed {
+    color: red;
+  }
+  .student-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .student-box {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    transition: background-color 0.3s;
+  }
+  
+  .student-box:hover {
+    background-color: #dce3f1;
+  }
+  
