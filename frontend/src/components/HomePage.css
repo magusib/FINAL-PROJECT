@@ -1,0 +1,100 @@
+.home {
+  text-align: center;
+  padding: 2rem;
+  background-color: green;
+}
+
+.main-title {
+  font-size: 1.8rem;
+  color: #000000;
+  margin-bottom: 2rem;
+  line-height: 2.5rem;
+}
+
+.logo-image {
+    border-radius: 50%;
+    border: 1rem solid black;
+}
+
+.content-box {
+  background: white;
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.content-box img {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 3px solid black;
+  margin-bottom: 15px;
+}
+
+.logo-placeholder {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 1rem;
+  background-color: #ddd;
+  border-radius: 50%;
+  line-height: 100px;
+  font-weight: bold;
+  color: #555;
+}
+
+.welcome {
+  font-size: 100;
+  font-style: italic, bold;
+  margin-bottom: 2rem;
+  color: #0c0404;
+}
+
+.auth-section {
+  background: #6a348a67;
+  padding: 1.5rem;
+  border-color: blue;
+  border-radius: 10px;
+}
+
+.auth-question {
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #0d47a1;
+  margin-bottom: 1rem;
+}
+
+.auth-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.student-button {
+  background-color: #1e88e5;
+  color: white;
+}
+
+.student-button:hover {
+  background-color: #1565c0;
+}
+
+.admin-button {
+  background-color: #43a047;
+  color: white;
+}
+
+.admin-button:hover {
+  background-color: #2e7d32;
+}

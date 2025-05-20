@@ -1,0 +1,83 @@
+
+/* Main login box */
+.login-container {
+  width: 350px;
+  padding: 30px;
+  border: 1px solid #ffffff;
+  border-radius: 12px;
+  background-color: green ;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Optional logo image */
+.login-container img {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 3px solid black;
+  margin-bottom: 15px;
+}
+
+/* Placeholder circle if no image is used */
+.logo-placeholder {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 1rem;
+  background-color: #ddd;
+  border-radius: 50%;
+  line-height: 100px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Heading */
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input fields */
+.login-container input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #aaa;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* Login button */
+.login-container .btn {
+  width: 95%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #09539e;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.login-container .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Register link */
+.login-container .account {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.login-container .account a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-container .account a:hover {
+  text-decoration: underline;
+}

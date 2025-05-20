@@ -37,9 +37,9 @@ function Dashboard() {
   );
 
   const handleLogout = () => {
-    localStorage.removeItem('username');
-    localStorage.removeItem('role');
-    navigate('/login');
+      localStorage.removeItem('username');
+      localStorage.removeItem('role');
+    navigate('/');
   };
 
   const handleGradeChange = (e) => setUpdatedGrade(e.target.value);
@@ -104,7 +104,7 @@ function Dashboard() {
             </button>
           )}
           <span>Logged in as: {currentUser} ({role})</span>
-          <button className="btn btn-danger" onClick={handleLogout}><a href="LoginPage.js">Logout</a></button>
+          <button className="btn btn-danger" onClick={handleLogout}>Logout</button>
         </nav>
 
         <div className="container mt-4">
